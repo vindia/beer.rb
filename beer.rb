@@ -1,7 +1,7 @@
 class Beer
   attr_accessor :color, :make, :temperature, :amount
 
-  def initialize (make, color, temperature)
+  def initialize (color, make, temperature)
     @color = color
     @make = make
     @temperature = temperature
@@ -11,6 +11,10 @@ class Beer
   def drink
     @amount = @amount - 10
   end
+
+  def drop
+    @amount = 0
+  end
 end
 
 # Creating beer!
@@ -18,6 +22,7 @@ grolsch = Beer.new('green', 'grolsch', 'cold')
 hertog_jan = Beer.new('brown', 'hertog jan', 'warm')
 
 # Lets drink some beer
+grolsch.drink
 grolsch.drink
 grolsch.drink
 puts "There's #{grolsch.amount}cl left in the bottle"
@@ -29,4 +34,8 @@ else
   puts "I'd pick the beer that's the coldest!"
 end
 
+puts "I hear Hertog Jan comes in #{hertog_jan.color} bottles."
+
+grolsch.drop
+puts "There's #{grolsch.amount}cl left in the bottle"
 

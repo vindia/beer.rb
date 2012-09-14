@@ -39,3 +39,9 @@ puts "I hear Hertog Jan comes in #{hertog_jan.color} bottles."
 grolsch.drop
 puts "There's #{grolsch.amount}cl left in the bottle"
 
+# Is the beer empty?
+if grolsch.amount == 0
+  puts "The Grolsch is empty, go check the fridge for more."
+else
+  puts "Pfff, still some left!"
+end

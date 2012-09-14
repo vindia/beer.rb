@@ -8,13 +8,18 @@ class Beer
     @amount = 100
   end
 
-  def drink
+  def drink!
     @amount = @amount - 10
   end
 
-  def drop
+  def drop!
     @amount = 0
   end
+
+  def empty?
+    @amount == 0
+  end
+
 end
 
 # Creating beer!
@@ -22,9 +27,9 @@ grolsch = Beer.new('green', 'grolsch', 'cold')
 hertog_jan = Beer.new('brown', 'hertog jan', 'warm')
 
 # Lets drink some beer
-grolsch.drink
-grolsch.drink
-grolsch.drink
+grolsch.drink!
+grolsch.drink!
+grolsch.drink!
 puts "There's #{grolsch.amount}cl left in the bottle"
 
 # Which beer to drink?
@@ -36,12 +41,14 @@ end
 
 puts "I hear Hertog Jan comes in #{hertog_jan.color} bottles."
 
-grolsch.drop
+grolsch.drop!
 puts "There's #{grolsch.amount}cl left in the bottle"
 
 # Is the beer empty?
-if grolsch.amount == 0
+#if grolsch.amount == 0
+if grolsch.empty?
   puts "The Grolsch is empty, go check the fridge for more."
 else
   puts "Pfff, still some left!"
 end
+

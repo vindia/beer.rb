@@ -65,6 +65,7 @@ This are some good sources for learning Ruby. Some offer interactive coding, oth
 * <http://mislav.uniqpath.com/poignant-guide/>
 * <http://ruby-doc.org/docs/Newcomers/ruby.html>
 * <http://hackety.com/>
+* <http://tryruby.org/>
 
 [git-tut]: https://help.github.com/articles/set-up-git
-[Amsterdam.rb]: http://amsrb.orn]
+[Amsterdam.rb]: http://amsrb.org]

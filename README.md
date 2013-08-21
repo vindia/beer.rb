@@ -1,6 +1,8 @@
 # Beer.rb
 For people who want to learn to program but don't like waffles. Quickly written during an [Amsterdam.rb] Hacknight.
 
+lolbeer
+
 ## Prerequisites
 * A Macbook or machine running Linux or Unix
 * Ruby
